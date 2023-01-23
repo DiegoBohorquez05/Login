@@ -1,22 +1,22 @@
-// guardad_localstorage()
-
-// function guardad_localstorage(){
-//     let usuario = {
-
-//     }
-    
-//     localStorage.setItem("user", usuario.user_name)
-//     localStorage.setItem("password", usuario.password)
-// };
-
 const user_name = "admin"
 const password = "123456789"
 
-const inputUsuario = document.getElementById('text-user')
-const inputContraseña=document.getElementById('txt-password')
+const inputUsuario = document.getElementById('text-user').value
+const inputPassword=document.getElementById('txt-password').value
+const entrar=document.getElementById('entrar')
 
-if(user_name===inputUsuario && password===inputContraseña){
-    console.log('asiodufgiasdvbashdvashdcblaksd')
-}else{
-    alert('No exsite')
-}
+entrar.addEventListener('click',()=>{
+    // console.log(typeof(password))
+    // console.log(inputUsuario===user_name?true:false)
+    // console.log(inpuasiodufgiasdvbashdvashdcblaksdtPassword===password?true:false)
+    // console.log(inputUsuario)
+    // console.log(inputPassword)
+    if(inputUsuario===user_name && inputPassword===password){
+        const token='asiodufgiasdvbashdvashdcblaksd';
+        console.log(token);
+        localStorage.setItem("token", token);
+    }else{
+        console.log('No exsite')
+    }
+})
+
