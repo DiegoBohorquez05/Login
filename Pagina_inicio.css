@@ -43,18 +43,40 @@
     justify-content: center;
 }
 .secciones{
-    border: solid;
     width: 90%;
     height: 80%;
     display: flex;
 }
 .articulo1{
-    border:solid;
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.articulo1__tarjeta{
+    width: 80%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 50px rgb(126, 126, 126);
 }
 .articulo2{
-    border:solid;
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.articulo2__tarjeta{
+    width: 80%;
+    height: 30%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 50px rgb(126, 126, 126);
+
 }
