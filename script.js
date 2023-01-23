@@ -10,8 +10,9 @@ entrar.addEventListener('click',()=>{
         const token='asiodufgiasdvbashdvashdcblaksd';
         console.log(token);
         localStorage.setItem("token", token);
+        window.location.href="Pagina_inicio.html"
     }else{
-        console.log('No exsite')
+        alert('Algo esta mal')
     }
 })
 
